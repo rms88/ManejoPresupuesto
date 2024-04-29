@@ -19,7 +19,8 @@
 
     <div class="mb-3">
         <label asp-for="TiposCuentas" class="form-label"></label>
-        <select class="form form-select" aria-label="Default select example" asp-for="TiposCuentas" asp-items="Model.TiposCuentas"></select>
+        <select class="form-select" asp-for="TipoCuentaId" asp-items="Model.TiposCuentas">
+        </select>
         <span asp-validation-for="TiposCuentas" class="text-danger"></span>
     </div>
 
