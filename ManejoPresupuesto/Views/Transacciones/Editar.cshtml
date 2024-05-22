@@ -40,10 +40,10 @@
         <textarea asp-for="Nota" class="form-control"></textarea>
         <span asp-validation-for="Nota" class="text-danger"></span>
     </div>
-    <button class=" btn btn-primary">Enviar</button>
+    <button class=" btn btn-primary">Actualizar</button>
+    <button class=" btn btn-danger" asp-action="Borrar">Borrar</button>
     <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
 </form>
-
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
     <script src="~/js/FormularioTransacciones.js" asp-append-version="true"></script>
